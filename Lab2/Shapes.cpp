@@ -1,6 +1,6 @@
 /** \file Shapes.cpp
-* \brief Program for drawing basic figures
-* \detail This program ...
+* \brief Functions for the main program
+* \detail This file contains all drawing functions 
 * \author Andrei Pahadayeu
 * \date 18/03/2022
 */

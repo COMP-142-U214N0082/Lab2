@@ -1,6 +1,6 @@
 /** \file Shapes.h
 * \brief Header file for a small drawing library
-* \detail This library ...
+* \detail This library contains function prototypes
 * \author Andrei Pahadayeu
 * \date 18/03/2022
 */

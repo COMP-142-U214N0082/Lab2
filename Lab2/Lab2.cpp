@@ -1,6 +1,6 @@
 /** \file Shapes.h
 * \brief Program for drawing basic figures
-* \detail This program ...
+* \detail This program draws figures, depending on the choice of menu
 * \author Andrei Pahadayeu
 * \date 18/03/2022
 */
