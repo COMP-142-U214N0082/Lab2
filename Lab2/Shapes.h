@@ -12,6 +12,5 @@ void drawHorizontalLine(int length, char ch);
 void drawVerticalLine(int height, char ch);
 void drawSquare(int size, char ch);
 void drawRectangle(int height, int length, char ch);
-bool check(int n);
 
 #endif SHAPES_H

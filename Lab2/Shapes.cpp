@@ -65,13 +65,3 @@ void drawRectangle(int height, int length, char ch)
 	drawHorizontalLine(length, ch);
 	cout << endl;
 }
-
-bool check(int n)
-{
-	bool b = true;
-	if (n < 0)
-	{
-		b = false;
-	}
-	return b;
-}

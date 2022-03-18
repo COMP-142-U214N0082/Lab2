@@ -36,15 +36,6 @@ int main()
 			cout << "How long do you want your line?";
 			int length;
 			cin >> length;
-			if (check(length) == false)
-			{
-				while (check(length == false))
-				{
-					cout << "\nWrong value,try again:";
-					cin >> length;
-					check(length);
-				}
-			}
 			cout << endl;
 			cout << "Which character would you like to use for the line?";
 			char character;
