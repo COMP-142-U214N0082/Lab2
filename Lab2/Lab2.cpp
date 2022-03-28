@@ -7,6 +7,7 @@
 * \copyright GNU Public License.
 */
 #include <iostream>
+#include <cassert>
 using namespace std;
 void drawHorizontalLine(int length, char ch);
 void drawVerticalLine(int height, char ch);
@@ -103,6 +104,7 @@ int main()
 */
 void drawHorizontalLine(int length, char ch)
 {
+	assert(length > 0);
 	for (int i = 0; i < length; i++)
 	{
 		cout << ch;
@@ -117,6 +119,7 @@ void drawHorizontalLine(int length, char ch)
 */
 void drawVerticalLine(int height, char ch)
 {
+	assert(height > 0);
 	for (int i = 0; i < height; i++)
 	{
 		cout << ch << endl;
@@ -131,6 +134,7 @@ void drawVerticalLine(int height, char ch)
 */
 void drawSquare(int size, char ch)
 {
+	assert(size > 0);
 	drawHorizontalLine(size, ch);
 	for (int i = 0; i < size - 2; i++)
 	{
@@ -153,6 +157,9 @@ void drawSquare(int size, char ch)
 */
 void drawRectangle(int height, int length, char ch)
 {
+	assert(height > 0);
+	assert(height > 0);
+	assert(length > 0);
 	drawHorizontalLine(length, ch);
 	for (int i = 0; i < height - 2; i++)
 	{
