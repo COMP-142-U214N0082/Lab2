@@ -1,9 +1,22 @@
+/** \file Lab2.cpp
+* \brief Program that draws different shapes
+* \details Program that allows user to choose which shape to draw using a menu
+* \author Andrei Pahadayeu
+* \version 0.1
+* \date 11.03.2022
+* \copyright GNU Public License.
+*/
 #include <iostream>
 using namespace std;
 void drawHorizontalLine(int length, char ch);
 void drawVerticalLine(int height, char ch);
 void drawSquare(int size, char ch);
 void drawRectangle(int height, int length, char ch);
+/**
+* This is main function of the program.
+* When launched it shows the menu in which
+* user can choose which shape to draw.
+*/
 int main()
 {
 	int choice;
@@ -82,7 +95,12 @@ int main()
 	} while (choice != 5);
 	return 0;
 }
-
+/**
+* This function asks user for the length of the line and the character
+* it's made of and draws this line horizontaly.
+* @param int length takes a number, which means the length of the line
+* @param char ch takes a character, with which this line is constructed
+*/
 void drawHorizontalLine(int length, char ch)
 {
 	for (int i = 0; i < length; i++)
@@ -91,7 +109,12 @@ void drawHorizontalLine(int length, char ch)
 	}
 	cout << endl;
 }
-
+/**
+* This function asks user for the length of the line and the character
+* it's made of and draws this line verticaly.
+* @param int height takes a number, which means the height of the line
+* @param char ch takes a character, with which this line is constructed
+*/
 void drawVerticalLine(int height, char ch)
 {
 	for (int i = 0; i < height; i++)
@@ -100,7 +123,12 @@ void drawVerticalLine(int height, char ch)
 	}
 	cout << endl;
 }
-
+/**
+* This function asks user for the length of the side of the square
+* and the character it's made of and draws the square.
+* @param int size takes a number, which means the length of the side
+* @param char ch takes a character, with which this square is constructed
+*/
 void drawSquare(int size, char ch)
 {
 	drawHorizontalLine(size, ch);
@@ -116,7 +144,13 @@ void drawSquare(int size, char ch)
 	drawHorizontalLine(size, ch);
 	cout << endl;
 }
-
+/**
+* This function asks user for the length of the sides of the rectangle
+* and the character it's made of and draws the rectangle.
+* @param int height takes a number, which means the hight of the side
+* @param int length takes a number, which means the length of the side
+* @param char ch takes a character, with which this rectangle is constructed
+*/
 void drawRectangle(int height, int length, char ch)
 {
 	drawHorizontalLine(length, ch);
